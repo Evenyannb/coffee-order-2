@@ -1,8 +1,12 @@
 package edu.iu.habahram.coffeeorder.model;
 
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 
 
+@Entity
+@Table(schema = "coffee")
 public class Customer {
 
     private String username;
@@ -10,9 +14,6 @@ public class Customer {
 
     private String email;
 
-    public Customer() {
-
-    }
 
     public Customer(String username, String password, String email) {
         this.username = username;
